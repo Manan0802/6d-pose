@@ -1,0 +1,20 @@
+# Dummy Config File
+dataset:
+  name: 'linemod'
+  root_dir: 'data/LINEMOD/ape'
+  train_split: 'train.txt'
+  test_split: 'test.txt'
+
+model:
+  name: 'PoseNet'
+  backbone: 'resnet50'
+  num_classes: 1
+  
+train:
+  batch_size: 8
+  learning_rate: 0.001
+  num_epochs: 400
+  
+log:
+  log_dir: 'logs/'
+  
